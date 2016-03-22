@@ -240,9 +240,7 @@
 				volumeFolder.add(soundControls, 'master').min(0.0).max(1.0).step(0.01).onChange(function() {
 					listener.setMasterVolume(soundControls.master);
 				});
-				volumeFolder.add(soundControls, 'ambient').min(0.0).max(1.0).step(0.01).onChange(function() {
-					sound4.setVolume(soundControls.ambient);
-				});
+			
 				///
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
