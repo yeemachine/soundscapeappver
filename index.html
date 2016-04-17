@@ -113,7 +113,7 @@
 				scene.add( hemiLight );
 
 
-				var sphere = new THREE.SphereGeometry( response[0].radius, response[0].polygon, 200 );
+				var sphere = new THREE.SphereGeometry( response[0].radius, response[0].polygon, response[0].polygon );
 
 				var objectMaterial1 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 1.0 } );
 				var objectMaterial2 = new THREE.MeshStandardMaterial( { color: response[1].spherecolor, roughness: 0.5, metalness: 0.5 } );
