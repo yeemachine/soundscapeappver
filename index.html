@@ -112,15 +112,20 @@
 				hemiLight.position.set( 0, 500, 0 );
 				scene.add( hemiLight );
 
-				var spherecolor1= response[0].spherecolor;
+
 				var sphere = new THREE.SphereGeometry( 20, 200, 200 );
-				var objectMaterial = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
-				material_sphere1 = objectMaterial;
-				material_sphere2 = objectMaterial;
-				material_sphere5 = objectMaterial;
-				material_sphere6 = objectMaterial;
-				material_sphere7 = objectMaterial;
-				material_sphere8 = objectMaterial;
+				var objectMaterial1 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				var objectMaterial2 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				var objectMaterial5 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				var objectMaterial6 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				var objectMaterial7 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				var objectMaterial8 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 0.5 } );
+				material_sphere1 = objectMaterial1;
+				material_sphere2 = objectMaterial2;
+				material_sphere5 = objectMaterial5;
+				material_sphere6 = objectMaterial6;
+				material_sphere7 = objectMaterial7;
+				material_sphere8 = objectMaterial8;
 
 				// sound spheres
 				for (var i = 0; i<15; i++){
