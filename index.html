@@ -113,7 +113,12 @@
 				scene.add( hemiLight );
 
 
-				var sphere = new THREE.SphereGeometry( 20, 200, 200 );
+				var sphere1 = new THREE.SphereGeometry( response[0].radius, response[0].spheresegments, response[0].spheresegments );
+				var sphere2 = new THREE.SphereGeometry( response[1].radius, response[1].spheresegments, response[1].spheresegments );
+				var sphere5 = new THREE.SphereGeometry( response[2].radius, response[2].spheresegments, response[2].spheresegments );
+				var sphere6 = new THREE.SphereGeometry( response[3].radius, response[3].spheresegments, response[3].spheresegments );
+				var sphere7 = new THREE.SphereGeometry( response[4].radius, response[4].spheresegments, response[4].spheresegments );
+				var sphere8 = new THREE.SphereGeometry( response[5].radius, response[5].spheresegments, response[5].spheresegments );
 				var objectMaterial1 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 1.0 } );
 				var objectMaterial2 = new THREE.MeshStandardMaterial( { color: response[1].spherecolor, roughness: 0.5, metalness: 0.5 } );
 				var objectMaterial5 = new THREE.MeshStandardMaterial( { color: response[2].spherecolor, roughness: 0.5, metalness: 1.0 } );
@@ -129,7 +134,7 @@
 
 				// sound spheres
 				for (var i = 0; i<15; i++){
-					var mesh1 = new THREE.Mesh( sphere, material_sphere1 );
+					var mesh1 = new THREE.Mesh( sphere1, material_sphere1 );
 					mesh1.position.x = (Math.random() - 0.5) * response[0].spacing;
 					mesh1.position.y = (Math.random() - 0.5) * response[0].spacing;
 					mesh1.position.z = (Math.random() - 0.5) * response[0].spacing;
@@ -147,7 +152,7 @@
 
 				//
 			for (var i = 0; i<5; i++){
-				var mesh2 = new THREE.Mesh( sphere, material_sphere2 );
+				var mesh2 = new THREE.Mesh( sphere2, material_sphere2 );
 				mesh2.position.x = (Math.random() - 0.5) * response[1].spacing;
 				mesh2.position.y = (Math.random() - 0.5) * response[1].spacing;
 				mesh2.position.z = (Math.random() - 0.5) * response[1].spacing;
@@ -167,7 +172,7 @@
 
 				//
 			for (var i = 0; i<10; i++){
-				var mesh5 = new THREE.Mesh( sphere, material_sphere5 );
+				var mesh5 = new THREE.Mesh( sphere5, material_sphere5 );
 				mesh5.position.x = (Math.random() - 0.5) * response[2].spacing;
 				mesh5.position.y = (Math.random() - 0.5) * response[2].spacing;
 				mesh5.position.z = (Math.random() - 0.5) * response[2].spacing;
@@ -182,7 +187,7 @@
 				}
 				///
 				for (var i = 0; i<5; i++){
-					var mesh6 = new THREE.Mesh( sphere, material_sphere6 );
+					var mesh6 = new THREE.Mesh( sphere6, material_sphere6 );
 					mesh6.position.x = (Math.random() - 0.5) * response[3].spacing;
 					mesh6.position.y = (Math.random() - 0.5) * response[3].spacing;
 					mesh6.position.z = (Math.random() - 0.5) * response[3].spacing;
@@ -198,7 +203,7 @@
 				}
 				///
 				for (var i = 0; i<10; i++){
-					var mesh7 = new THREE.Mesh( sphere, material_sphere7 );
+					var mesh7 = new THREE.Mesh( sphere7, material_sphere7 );
 					mesh7.position.x = (Math.random() - 0.5) * response[4].spacing;
 					mesh7.position.y = (Math.random() - 0.5) * response[4].spacing;
 					mesh7.position.z = (Math.random() - 0.5) * response[4].spacing;
@@ -214,7 +219,7 @@
 				}
 				///
 				for (var i = 0; i<3; i++){
-					var mesh8 = new THREE.Mesh( sphere, material_sphere8 );
+					var mesh8 = new THREE.Mesh( sphere8, material_sphere8 );
 					mesh8.position.x = (Math.random() - 0.5) * response[5].spacing;
 					mesh8.position.y = (Math.random() - 0.5) * response[5].spacing;
 					mesh8.position.z = (Math.random() - 0.5) * response[5].spacing;
