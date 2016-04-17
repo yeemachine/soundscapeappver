@@ -114,11 +114,11 @@
 
 
 				var sphere1 = new THREE.SphereGeometry( response[0].radius, response[0].spheresegments, response[0].spheresegments );
-				var sphere2 = new THREE.SphereGeometry( response[1].radius, response[1].spheresegments, response[1].spheresegments );
-				var sphere5 = new THREE.SphereGeometry( response[2].radius, response[2].spheresegments, response[2].spheresegments );
-				var sphere6 = new THREE.SphereGeometry( response[3].radius, response[3].spheresegments, response[3].spheresegments );
-				var sphere7 = new THREE.SphereGeometry( response[4].radius, response[4].spheresegments, response[4].spheresegments );
-				var sphere8 = new THREE.SphereGeometry( response[5].radius, response[5].spheresegments, response[5].spheresegments );
+				var sphere2 = new THREE.SphereGeometry( response[1].radius, response[0].spheresegments, response[0].spheresegments );
+				var sphere5 = new THREE.SphereGeometry( response[2].radius, response[0].spheresegments, response[0].spheresegments );
+				var sphere6 = new THREE.SphereGeometry( response[3].radius, response[0].spheresegments, response[0].spheresegments );
+				var sphere7 = new THREE.SphereGeometry( response[4].radius, response[0].spheresegments, response[0].spheresegments );
+				var sphere8 = new THREE.SphereGeometry( response[5].radius, response[0].spheresegments, response[0].spheresegments );
 				var objectMaterial1 = new THREE.MeshStandardMaterial( { color: response[0].spherecolor, roughness: 0.5, metalness: 1.0 } );
 				var objectMaterial2 = new THREE.MeshStandardMaterial( { color: response[1].spherecolor, roughness: 0.5, metalness: 0.5 } );
 				var objectMaterial5 = new THREE.MeshStandardMaterial( { color: response[2].spherecolor, roughness: 0.5, metalness: 1.0 } );
