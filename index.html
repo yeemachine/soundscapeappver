@@ -278,8 +278,8 @@
 				//
 				controls = new THREE.FirstPersonControls( camera, renderer.domElement );
 
-				controls.movementSpeed = 300;
-				controls.lookSpeed = 0.1;
+				controls.movementSpeed = response[0].speed;
+				controls.lookSpeed = response[0].lookspeed;
 				controls.noFly = false;
 				controls.lookVertical = true;
 
